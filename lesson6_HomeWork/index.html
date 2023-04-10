@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+   
+    <div class="container">
+        <h1>ФОРМА</h1>
+        <form class="form" action="">
+            <div class="form__field">
+                <label for="inp1">
+                    <div>Повне ім'я</div>
+                    <input id="first_name" type="text" required>
+                </label>
+            </div>
+        </form>
+        <form class="form" action="">
+            <div class="form__field">
+                <label for="inp2">
+                    <div>Email</div>
+                    <input id="email" type="email" required>
+                </label>
+            </div>
+        </form>
+        <form class="form" action="">
+            <div class="form__field">
+                <label for="inp3">
+                    <div>Пароль</div>
+                    <input id="Password" type="Password" required>
+                </label>
+            </div>
+        </form>
+        <form class="form" action="">
+            <div class="form__field">
+                <label for="inp4">
+                    <div>Пароль ще раз</div>
+                    <input id="Password" type="Password" required>
+                </label>
+            </div>
+        </form>
+        <form class="form" action="">
+            <div class="form__field">
+                <div>Стать</div><br>
+                <label for="inp5">
+                    <div>Чоловіча</div>
+                    <input type="radio" id="man" name="sex" value="man" >
+                </label>
+                <label for="inp6">
+                    <div>Жіноча</div>
+                    <input type="radio" id="woman" name="sex" value="woman" >
+                </label>
+            </div>
+        </form>
+             
+        <form class="form" action="">
+            <div class="form__field">
+                <label for="inp7">
+                    <div>Вік</div>
+                    <input id="Ages" type="number" required>
+                </label>
+            </div>
+        </form>
+        <form class="form" action="">
+            <p>Курс</p>
+                <div class="form__field">
+                    <select name="country" id="sel1">
+                        <option value="">-=Виберіть курс=-</option>
+                        <option value="">Front-End</option>
+                        <option value="">Back-End</option>
+                        <option value="">Project Management</option>
+                        <option value="">QA Manual</option>
+                    </select>
+                </div>
+                <br>
+        </form>
+        <form class="form" action="">
+            <div class="form__field">
+                <label for="inp8">
+                    <div>Повна адреса</div> <br>
+                    <textarea name="message" rows="5" cols="25" placeholder="Країна, регіон, місто/селище, вулиця" required></textarea>
+                </label>
+            </div>
+        </form>
+        <form class="form" action="">
+            <div class="form__field">
+                <label for="inp9">
+                    <div>Я погоджуюсь з обробкою персональних данних</div> 
+                    <input type="checkbox" id="coding" name="interest" value="coding" required/>
+                </label>
+            </div>
+        </div>
+        </form>
+       
+        <button>Зареєструватися</button>
+    </div>
+</body>
+
+</html>
