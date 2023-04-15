@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,100;1,200;1,600&family=Roboto:wght@400;700&display=swap');
+
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all .1s ease-in;
+}
+
+/* Reset end */
+
+/* Variable */
+
+:root{
+    --color-red: #FF8984;
+    --color-white: #ffffff;
+    --main-fonts: Roboto, sans-serif;
+    
+}
+
+/* Variable end*/
+
+
+/* Global style */
+
+.container{
+    padding: 0 16px;
+    max-width: 793px;
+    margin: 0 auto;
+}
+
+
+
+.wrapper{
+    margin: 20px;
+}
+
+/* Global style end */
+
+/* Header */
+
+.header .container{
+    background-color: #4A4F56;
+    height: 82px;
+}
+
+.header__title{
+    color: var(--color-red);
+    text-align: center;
+    padding-top: 19px;
+}
+
+.header__text{
+    color: var(--color-red);
+    text-align: center;
+}
+
+
+
+/* Header end */
+
+/* Table */
+
+.list{
+    color: var(--color-white);
+    display: inline; 
+    font-size: 18px;
+}
+
+.note.table__item{
+    color: var(--color-white);
+    display: inline;
+    font-size: 11px;
+}
+
+.table{
+    background-color: #3B3F45;
+    width: 793px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.table .container{
+    height: 360px;
+    width: 534px;
+}
+.table__item{
+    width: 543px;
+    height: 45px;
+    padding: 10px 12px ;
+    background-color: #88839E;
+}
+
+/* .table__item:last-child{
+    padding: 10px auto;
+} */
+
+.note.table__item:after{
+    content: ")";
+}
+
+.note.table__item:before {
+    content: "(";
+}
+
+.table__item:hover {
+    background-color: #625E77;
+    border: solid;
+    border-left: 0;
+    border-right: 0;
+    border-color: #ffffff;
+}
+
+
+.table__item:hover p{
+    background-color: #625E77;
+    border: 20px;
+    border-color: #ffffff;
+}
+    
+.table__item:active{
+    background-color: var(--color-red);
+}
+
+.table__item:active p{
+    background-color: var(--color-red);
+}
+
+.list.table__item:checked{
+    text-decoration: line-through;
+}
+.note.table__item
+/* .table .container:nth-child(2n) > .table__item{
+    background-color: #19057a;
+    
+} */
+
+
+.last .container {
+    background-color: #4A4F56;
+    height: 45px;
+    width: 543px;
+    margin-top: 45px;
+    color: var(--color-red);
+    text-align: center;
+    padding: 12px;
+}
+/* Table end*/
+
