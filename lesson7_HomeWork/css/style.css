@@ -26,21 +26,16 @@
 
 .container{
     padding: 0 16px;
-    max-width: 793px;
     margin: 0 auto;
-}
-
-
-
-.wrapper{
-    margin: 20px;
+    max-width: 1280px;
+    min-width: 380px;
 }
 
 /* Global style end */
 
 /* Header */
 
-.header .container{
+.header {
     background-color: #4A4F56;
     height: 82px;
 }
@@ -68,7 +63,7 @@
     font-size: 18px;
 }
 
-.note.table__item{
+.note{
     color: var(--color-white);
     display: inline;
     font-size: 11px;
@@ -76,17 +71,11 @@
 
 .table{
     background-color: #3B3F45;
-    width: 793px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.table .container{
-    height: 360px;
-    width: 534px;
-}
 .table__item{
-    width: 543px;
     height: 45px;
     padding: 10px 12px ;
     background-color: #88839E;
@@ -96,51 +85,48 @@
     padding: 10px auto;
 } */
 
-.note.table__item:after{
+.note:after{
     content: ")";
 }
 
-.note.table__item:before {
+.note:before {
     content: "(";
 }
 
-.table__item:hover {
+.container .table__item:hover {
     background-color: #625E77;
     border: solid;
     border-left: 0;
     border-right: 0;
     border-color: #ffffff;
+    cursor: pointer;
 }
 
-
-.table__item:hover p{
+/*
+.container .table__item:hover{
     background-color: #625E77;
     border: 20px;
     border-color: #ffffff;
 }
-    
-.table__item:active{
+ */   
+.container .table__item:active{
     background-color: var(--color-red);
 }
 
-.table__item:active p{
-    background-color: var(--color-red);
-}
-
-.list.table__item:checked{
+.table__item input:checked ~ p{
     text-decoration: line-through;
-}
-.note.table__item
-/* .table .container:nth-child(2n) > .table__item{
-    background-color: #19057a;
+ }
+
+/* .note.table__item */
+.table__item:nth-child(2n){
+    background-color: #7A7593;
     
-} */
+} 
 
-
-.last .container {
+.last {
     background-color: #4A4F56;
     height: 45px;
-    width: 543px;
+    /*width: 543px;*/
     margin-top: 45px;
     color: var(--color-red);
     text-align: center;
