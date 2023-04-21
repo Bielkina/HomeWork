@@ -1,0 +1,89 @@
+/* Variable */
+:root{
+    --color-orange: #FF9900;
+
+}
+/* Variable end */
+.header__content{
+    display: inline-block;
+    padding: 15px 0;
+    background-color: rgb(135, 132, 132);
+    margin: 0 auto;
+    
+    
+ }
+
+/* Header */
+
+.header{
+    height: 80px;
+    background-color: rgb(220, 209, 209);
+}
+
+.header-menu__item{
+    display: inline-block;
+    cursor: pointer;
+    margin: auto 10px;
+
+}
+
+.header__nav{
+    margin-right: 200px;
+}
+
+/* .logo{
+    height: 80px;
+    display: inline-block;
+    margin-right: 200px;
+} */
+.logo-img{
+    /* width: 200px;
+    height: 32px; */
+    margin: auto 0;
+}
+.header-btn {
+    margin-right: 0;
+}
+/* .header__nav{
+    margin: 30px 200px 30px 0;
+} */
+
+.btn-sign { 
+    /* background-color: black; */
+    width: 110px;
+    height: 46px;
+    border: 1px solid #BCD0E5;
+    padding: 13px 26px;
+    border-radius: 5px;
+    /* margin: 0; */
+}
+
+.btn-sign:hover{
+    background-color:var(--color-orange) ;
+}
+
+/* Header end */
+
+/* Main */
+.main{
+    margin: 0 auto;
+}
+
+.first-screen{
+    display: inline-block;
+}
+.about__first-screen{
+    width: 40%;
+    margin-top: 0;
+    padding-top: 0;
+    
+}
+
+/* .first-screen__text{
+   
+} */
+
+.hero{
+    margin-right: 0;
+}
+/* Main end */
