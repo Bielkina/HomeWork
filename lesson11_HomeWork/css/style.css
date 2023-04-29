@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Variable */
+
+:root{
+--font-title: Delius Unicase, sans-serif;
+--font-subtitle: Roboto, sans-serif;
+
+
+
+--h2-fonts: 400 36px/45px var(--font-title);
+--name-fonts: 500 20px/23.44px var(--font-subtitle);
+--date-fonts: 400 20px/23.44px var(--font-subtitle);
+}
+
+
+/* Variable end */
+
+.title{
+    font: var(--h2-fonts);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 120px 0 80px;
+}
+
+.main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+   
+}
+
+.blur1{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
+    border-radius: 20px;
+}
+
+.photo{
+    border-radius: 20px;
+    z-index: -3;
+   
+    /* height: 370px; */
+    
+    /* position: absolute; */
+}
+
+
+.photo, .blur, .photographer, .date{
+    position: absolute;
+}
+
+.photographer{
+    left: 20px;
+    bottom: 20px;
+    /* z-index: 2; */
+    font: var(--name-fonts);
+    color: white;
+}
+
+.date{
+    right: 20px;
+    bottom: 20px;
+    font: var(--date-fonts);
+    color: #E0E0E0;
+
+}
+
+.gallery_cities-works{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.cities-item{
+    overflow: hidden;
+    position: relative;
+    
+}
+.city_first{
+    /* position: relative; */
+    /* height: 370px; */
+    /* width: fit-content; */
+    grid-row: 1/2;
+    grid-column: 1/2;
+    /* grid-column: 1/2; */
+}
+
+.city_second{
+    grid-row: 1/2;
+    grid-column: 2/4;
+}  
+
+.city_third {
+    grid-row: 2/3;
+    grid-column: 1/3;
+   
+}
+
+.city_fourth{
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+.city_fifth{
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+.city_sixth{
+    grid-row: 3/4;
+    grid-column: 2/4;
+}
+
+
+/* section2 */
+
+.gallery_nature{
+    display: grid;
+    grid-template-areas: 
+    "nature-1 nature-2 nature-2"
+    "nature-3 nature-3 nature-4"
+    "nature-3 nature-3 nature-4"
+    "nature-5 nature-5 nature-6";
+    gap: 30px;
+}
+
+.gallery-item{
+    /* overflow: hidden; */
+    border-radius: 20px;
+}
+
+.nature-1{
+    grid-area: nature-1;
+}
+
+.nature-2 {
+    grid-area: nature-2;
+}
+
+.nature-3 {
+    grid-area: nature-3;
+}
+.nature-4 {
+    grid-area: nature-4;
+}
+.nature-5 {
+    grid-area: nature-5;
+}
+.nature-6 {
+    grid-area: nature-6;
+}
+
+.photo-nature{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* section3 */
+
+.gallery_people{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 30px;
+}
+
+.portrait-1{
+    grid-area: 1 / 1 / span 1 / span 1;
+    height: 370px;
+}
+
+.portrait-2 {
+    grid-area: 1 / 2 / span 2 / span 1;
+}
+
+.portrait-3 {
+    grid-area: 1 / 3 / span 1 / span 1;
+}
+
+.portrait-4 {
+    grid-area: 2 / 1 / span 1 / span 1;
+}
+
+.portrait-5 {
+    grid-area: 2 / 3 / span 2 / span 1;
+}
+
+.portrait-6 {
+    grid-area: 3 / 1 / span 2 / span 1;
+}
+
+.portrait-7 {
+    grid-area: 3 / 2 / span 1 / span 1;
+}
+
+.portrait-8 {
+    grid-area: 4 / 2 / span 1 / span 2;
+}
+
+.portrait-9 {
+    grid-area: 5 / 1 / span 1 / span 2;
+}
+
+.portrait-10 {
+    grid-area: 5 / 3 / span 1 / span 1;
+}
+
+
+
