@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 /* Variable */
@@ -20,16 +21,13 @@
 
 /* Variable end */
 
-.title{
-    font: var(--h2-fonts);
-    text-transform: uppercase;
-    text-align: center;
-    margin: 120px 0 80px;
-}
-
 .main{
     max-width: 1440px;
     margin: 0 auto;
+    padding-top: 120px;
+}
+.section{
+    margin-bottom: 120px;
 }
 
 .container{
@@ -38,24 +36,26 @@
    
 }
 
-.blur1{
+.title {
+    font: var(--h2-fonts);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.blur{
     height: 100%;
     width: 100%;
+    object-fit: cover;
     background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
-    border-radius: 20px;
-}
-
-.photo{
-    border-radius: 20px;
-    z-index: -3;
-   
-    /* height: 370px; */
-    
-    /* position: absolute; */
+    bottom: 0;
 }
 
 
-.photo, .blur, .photographer, .date{
+.photo,
+.blur,
+.photographer,
+.date {
     position: absolute;
 }
 
@@ -67,6 +67,15 @@
     color: white;
 }
 
+.photo {
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+    /* z-index: -3; */
+}
+
 .date{
     right: 20px;
     bottom: 20px;
@@ -75,18 +84,29 @@
 
 }
 
-.gallery_cities-works{
+.gallery_cities{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 30px;
 }
 
-.cities-item{
+.cities{
+    height: 370px;
+}
+
+.item{
     overflow: hidden;
     position: relative;
+    border-radius: 20px;
+    cursor: pointer;
+    min-width: 330px;
+   
     
 }
+
+
+
 .city_first{
     /* position: relative; */
     /* height: 370px; */
@@ -126,6 +146,7 @@
 /* section2 */
 
 .gallery_nature{
+    /* position: relative; */
     display: grid;
     grid-template-areas: 
     "nature-1 nature-2 nature-2"
@@ -133,11 +154,6 @@
     "nature-3 nature-3 nature-4"
     "nature-5 nature-5 nature-6";
     gap: 30px;
-}
-
-.gallery-item{
-    /* overflow: hidden; */
-    border-radius: 20px;
 }
 
 .nature-1{
@@ -162,9 +178,11 @@
 }
 
 .photo-nature{
-    border-radius: 20px;
-    width: 100%;
+    display: block;
+    object-fit: cover;
     height: 100%;
+    width: 100%;
+    /* position: absolute; */
     
 }
 
@@ -218,5 +236,53 @@
     grid-area: 5 / 3 / span 1 / span 1;
 }
 
+.btn{
+    position:absolute;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(224, 224, 224);
+    opacity: 0.5;
+    display: none;
+}
 
 
+
+.like{
+    top: 20px;
+    left: 20px;
+    background-image: url(/logos/heart.png);
+    background-position: center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.download {
+    top: 20px;
+    right: 20px;
+    background-image: url(/logos/download.png);
+    background-position: center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.item:hover {
+    filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.5));
+}
+
+.item:hover .btn{
+    display: block;
+}
+
+.item:hover .blur {
+    /* display: none; */
+    background: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%);
+
+}
+
+.btn:hover {
+
+    opacity: 1;
+    cursor: url(/cursor/hand-point-up.png), auto;
+}
