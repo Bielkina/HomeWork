@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Variable */
+:root{
+
+    /* color */
+
+    --color-purple-light: #9E8CFC;
+    --color-green-light: #6FCF97;
+    --color-red: #EA5455;
+    --color-yellow: #F2C94C;
+    --color-gray-light: #BDBDBD;
+
+}
+
+
+/* Variable End */
+
+
+.container{
+    background-color: #283046;
+    width: 80px;
+    margin: 0 auto;  
+    position: relative;
+}
+
+ul{
+    list-style: none;
+}
+
+.logo{
+    height: 102px;
+    width: 100%;    
+}
+.img-logo{
+    display: block; 
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.text{
+    display: none;
+    color: var(--color-gray-light);
+    font: 400 14px/17px 'Monserrat';
+}
+.item{
+    display: flex;
+    /* width: 100%; */
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.line{
+    height: 25px;
+    margin-top: 30px; 
+}
+
+.line__img{
+     margin: 0 auto;
+}
+
+.item:hover{
+    background-color: #9E8CFC;
+    box-shadow: 0px 0px 20px rgba(158, 140, 252, 0.7);
+}
+
+.item:hover .item__img path{
+    fill: #ffffff;
+}
+
+.arrow{
+    position: absolute;
+    right: -10px;
+    top: 36px;
+}
+
+.index{
+    position: relative;
+}
+
+.index-email::after{
+    position: absolute;
+    content: '25';
+    font:  700 12px/14.63px 'Montserrat';
+    border-radius: 12px;
+    left: 49px;
+    top: 19px;
+    background-color: var(--color-green-light);
+    padding: 2.5px;
+
+}
+.index-chats::after {
+    position: absolute;
+    content: '10';
+    font: 700 12px/14.63px 'Montserrat';
+    border-radius: 12px;
+    left: 49px;
+    top: 19px;
+    background-color: var(--color-red);
+    padding: 2.5px;
+}
+
+.index-calendar::after {
+    position: absolute;
+    content: '5';
+    font: 700 12px/14.63px 'Montserrat';
+    border-radius: 12px;
+    left: 49px;
+    top: 19px;
+    background-color: var(--color-yellow);
+    padding: 5px;
+}
+
+
+
+
+.arrow{
+    background-color: transparent;
+    border: none;
+}
+
+.container:hover{
+    width: 110px;
+}
+
+/* .container:active {
+    width: 110px;
+} */
+
+.container:hover .text{
+    display: block;
+}
+
+.container:hover .index-email::after{
+    left: 64px;
+    top: 8px
+}
+
+
+.container:hover .index-chats::after {
+    left: 64px;
+    top: 8px
+}
+
+.container:hover .index-calendar::after {
+    left: 64px;
+    top: 8px
+}
+
+
+.container:hover .arrow{
+    transform: rotate(180deg);
+}
+
+
+.arrow:active + .text{
+    display: block;
+}
